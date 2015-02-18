@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AFNetworking.h"
 #import "Weather.h"
+#import "DailyWeather.h"
+
+@class Weather;
 
 @interface OpenWeatherAPIManager : NSObject
 

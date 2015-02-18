@@ -6,10 +6,8 @@
 //  Copyright (c) 2015 FarConnection. All rights reserved.
 //
 
-#import "AFNetworking.h"
 
 #import "OpenWeatherAPIManager.h"
-#import "DailyWeather.h"
 
 @interface OpenWeatherAPIManager()
 

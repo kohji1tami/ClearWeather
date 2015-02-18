@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E357D109-3323-4F2D-8346-5746AA42CCFA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ClearWeather</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CADE5F46FAD7907D22270D19387E496BB45C3CDB</key>
+		<string>https://github.com/tkcfjips/ClearWeather.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ClearWeather.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CADE5F46FAD7907D22270D19387E496BB45C3CDB</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tkcfjips/ClearWeather.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CADE5F46FAD7907D22270D19387E496BB45C3CDB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CADE5F46FAD7907D22270D19387E496BB45C3CDB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ClearWeather</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "OpenWeatherAPIManager.h"
 #import "ListTableViewCell.h"
-#import "DailyWeather.h"
 #import "Canvas.h"
 
 @interface ViewController () <UITableViewDataSource> {
