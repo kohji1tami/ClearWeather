@@ -41,7 +41,8 @@
 
 + (NSString*)translateUnixTime:(int)date
 {
-    NSDateComponents *dateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth|NSCalendarUnitDay fromDate:[NSDate dateWithTimeIntervalSince1970:date]];
+    NSDateComponents *dateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth|NSCalendarUnitDay
+                                                                  fromDate:[NSDate dateWithTimeIntervalSince1970:date]];
     
     return [NSString stringWithFormat:@"%ld/%ld", (long)dateComps.month, (long)dateComps.day];
 }

@@ -11,8 +11,6 @@
 #import "Weather.h"
 #import "DailyWeather.h"
 
-@class Weather;
-
 @interface OpenWeatherAPIManager : NSObject
 
 typedef void (^WeatherBlock)(Weather*);

@@ -14,6 +14,7 @@
 {
     self = [super init];
     if (self) {
+        
     }
     return self;
 }
@@ -34,6 +35,5 @@
 {
     return [NSString stringWithFormat:@"%1.0f∘", floor(doubleValue - 273.15)];
 }
-
 
 @end

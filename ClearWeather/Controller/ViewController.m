@@ -122,9 +122,9 @@
 - (ListTableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     ListTableViewCell* cell;
-    cell = [_tableView dequeueReusableCellWithIdentifier:@"cell"];
+    cell = [_tableView dequeueReusableCellWithIdentifier:@"Cell"];
     if (!cell) {
-        cell = [[ListTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cell = [[ListTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
     [self updateCell:cell forIndexPath:indexPath];
     return cell;
@@ -138,10 +138,6 @@
     cell.aDescription.text = dailyWeather.aDescription;
     cell.temp_max.text = dailyWeather.temp_max;
     cell.temp_min.text = dailyWeather.temp_min;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
 }
 
 - (void)animationWithDelay:(NSTimeInterval)delay andView:(UIView*)view

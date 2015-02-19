@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Weather.h"
 
-
 @interface ListTableViewCell : UITableViewCell
 
 @property (nonatomic, strong) UIImageView* weatherImage;

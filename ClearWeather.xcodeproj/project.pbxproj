@@ -150,10 +150,10 @@
 			children = (
 				0B21E1DB1A90A31100383249 /* Weather.h */,
 				0B21E1DC1A90A31100383249 /* Weather.m */,
-				0B21E1DF1A90A79800383249 /* OpenWeatherAPIManager.h */,
-				0B21E1E01A90A79800383249 /* OpenWeatherAPIManager.m */,
 				0BAB3B191A93ACF800209DCC /* DailyWeather.h */,
 				0BAB3B1A1A93ACF800209DCC /* DailyWeather.m */,
+				0B21E1DF1A90A79800383249 /* OpenWeatherAPIManager.h */,
+				0B21E1E01A90A79800383249 /* OpenWeatherAPIManager.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
