@@ -11,6 +11,17 @@
 #import "Weather.h"
 #import "DailyWeather.h"
 
+/****************************************
+ 
+# APIへの接続と、モデルを管理するクラス
+ 
+- このクラスはインスタンスを一つしか作らないシングルトンクラスで実装します。
+- 通信処理などはここに集約させる
+- Controllerへの通信方法としてKVOやNSNotificationCenterなどがあるが、
+  ブロック構文の方が手軽なのでここではブロック構文でcontrollerへ通知します。
+ 
+****************************************/
+
 @interface OpenWeatherAPIManager : NSObject
 
 typedef void (^WeatherBlock)(Weather*);

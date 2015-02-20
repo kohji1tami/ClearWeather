@@ -7,16 +7,8 @@
 //
 
 #import "ListTableViewCell.h"
-#import "Canvas.h"
 
 @implementation ListTableViewCell
-
-- (void)awakeFromNib {
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-}
 
 - (instancetype)init
 {
@@ -67,18 +59,12 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    
     CGSize kCellSize = self.frame.size;
-    
     _weatherImage.frame = CGRectMake(0, 0, 80, 80);
     _weatherImage.layer.position = CGPointMake(kCellSize.width/2, kCellSize.height/2);
-    
     _date.frame = CGRectMake(20, 20, 100, 40);
-    
     _temp_max.frame = CGRectMake(kCellSize.width - 120, 20, 100, 40);
-    
     _temp_min.frame = CGRectMake(kCellSize.width - 120, 50, 100, 40);
-    
     _aDescription.frame = CGRectMake(20, 45, 200, 40);
 }
 

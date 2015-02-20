@@ -19,18 +19,21 @@
     return self;
 }
 
+// Jsonをパースするクラスメソッド
 + (Weather*)parseJSON:(NSDictionary*)data
 {
+    // Weatherのインスタンスを作成
     Weather* weather = [[Weather alloc] init];
+    // 与えられたデータをパースしてプロパティに入れる
     weather.temp_max = [self translateDouble:[[[data valueForKey:@"main"] valueForKey:@"temp_max"] doubleValue]];
     weather.temp_min = [self translateDouble:[[[data valueForKey:@"main"] valueForKey:@"temp_min"] doubleValue]];
     weather.name = [data valueForKey:@"name"];
     weather.main = [[data valueForKey:@"weather"][0] valueForKey:@"main"];
     weather.aDescription = [[data valueForKey:@"weather"][0] valueForKey:@"description"];
-    // NSLog(@"%@", weatherData);
     return weather;
 }
 
+// APIが返してくれる天気はケルビンなので変換して返す
 + (NSString*)translateDouble:(double)doubleValue
 {
     return [NSString stringWithFormat:@"%1.0f∘", floor(doubleValue - 273.15)];

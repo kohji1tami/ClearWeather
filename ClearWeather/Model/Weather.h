@@ -6,6 +6,14 @@
 //  Copyright (c) 2015 FarConnection. All rights reserved.
 //
 
+/****************************************
+ 
+# 天気予報のデータをまとめて管理するためのクラス
+ 
+- パースなどのロジックは全てモデルクラスに集約させる
+
+****************************************/
+
 #import <Foundation/Foundation.h>
 
 @interface Weather : NSObject
