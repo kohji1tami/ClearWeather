@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0B21E1B81A90A2E600383249 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B21E1B71A90A2E600383249 /* main.m */; };
-		0B21E1C11A90A2E600383249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B21E1BF1A90A2E600383249 /* Main.storyboard */; };
 		0B21E1C31A90A2E600383249 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B21E1C21A90A2E600383249 /* Images.xcassets */; };
 		0B21E1C61A90A2E600383249 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B21E1C41A90A2E600383249 /* LaunchScreen.xib */; };
 		0B21E1D21A90A2E600383249 /* ClearWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B21E1D11A90A2E600383249 /* ClearWeatherTests.m */; };
@@ -40,7 +39,6 @@
 		0B21E1B21A90A2E600383249 /* ClearWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B21E1B61A90A2E600383249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B21E1B71A90A2E600383249 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0B21E1C01A90A2E600383249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B21E1C21A90A2E600383249 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		0B21E1C51A90A2E600383249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0B21E1CB1A90A2E600383249 /* ClearWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,7 +159,6 @@
 		0BA521AF1A90D8A700825644 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0B21E1BF1A90A2E600383249 /* Main.storyboard */,
 				0BA521B01A90D8CE00825644 /* ListTableViewCell.h */,
 				0BA521B11A90D8CE00825644 /* ListTableViewCell.m */,
 			);
@@ -293,7 +290,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B21E1C11A90A2E600383249 /* Main.storyboard in Resources */,
 				0B21E1C61A90A2E600383249 /* LaunchScreen.xib in Resources */,
 				0BAB3B2C1A93C92100209DCC /* back.png in Resources */,
 				0BAB3B251A93B14C00209DCC /* Clouds.png in Resources */,
@@ -380,14 +376,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0B21E1BF1A90A2E600383249 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B21E1C01A90A2E600383249 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0B21E1C41A90A2E600383249 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

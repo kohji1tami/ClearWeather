@@ -37,6 +37,7 @@
     // スクリーンサイズを取得
     CGSize kScreenSize = [UIScreen mainScreen].bounds.size;
     
+    self.view.layer.cornerRadius = 10;
     // 背景を変える
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"back"]];
     
