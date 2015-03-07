@@ -37,7 +37,6 @@
     // スクリーンサイズを取得
     CGSize kScreenSize = [UIScreen mainScreen].bounds.size;
     
-    self.view.layer.cornerRadius = 10;
     // 背景を変える
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"back"]];
     
@@ -95,31 +94,32 @@
     [super viewDidLoad];
     
     // 一週間の天気を取得する
+    __weak typeof(self) weakSelf = self;
     [[OpenWeatherAPIManager sharedManager] getWeatherOfDailyWith:^(NSArray* response){
         // 取得した天気をプロパティに入れる
-        _weatherData = response;
+        weakSelf.weatherData = response;
         
         // メインキューでtableViewを更新
         dispatch_async(dispatch_get_main_queue(), ^{
-            [_tableView reloadData];
+            [weakSelf.tableView reloadData];
         });
     }];
     
     // 天気を取得してそのまま結果を表示
     [[OpenWeatherAPIManager sharedManager] getWeatherWith:^(Weather* response){
         // Viewに反映
-        _weatherImage.image = [[UIImage imageNamed:response.main] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-        _weatherDescription.text = response.aDescription;
-        _name.text = response.name;
-        _weatherMaxTemp.text = response.temp_max;
-        _weatherMinTemp.text = response.temp_min;
+        weakSelf.weatherImage.image = [[UIImage imageNamed:response.main] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        weakSelf.weatherDescription.text = response.aDescription;
+        weakSelf.name.text = response.name;
+        weakSelf.weatherMaxTemp.text = response.temp_max;
+        weakSelf.weatherMinTemp.text = response.temp_min;
         
         // アニメーションをしない場合は不要
-        [self animationWithDelay:0.6 andView:_weatherImage];
-        [self animationWithDelay:0.2 andView:_weatherDescription];
-        [self animationWithDelay:0.4 andView:_name];
-        [self animationWithDelay:0.3 andView:_weatherMaxTemp];
-        [self animationWithDelay:0.1 andView:_weatherMinTemp];
+        [weakSelf animationWithDelay:0.6 andView:_weatherImage];
+        [weakSelf animationWithDelay:0.2 andView:_weatherDescription];
+        [weakSelf animationWithDelay:0.4 andView:_name];
+        [weakSelf animationWithDelay:0.3 andView:_weatherMaxTemp];
+        [weakSelf animationWithDelay:0.1 andView:_weatherMinTemp];
     }];
 }
 

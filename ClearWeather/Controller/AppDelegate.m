@@ -20,6 +20,7 @@
     
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _window.layer.cornerRadius = 10;
+    _window.layer.masksToBounds = YES;
     
     _window.rootViewController = [[ViewController alloc] init];
     
